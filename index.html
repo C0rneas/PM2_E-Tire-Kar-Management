@@ -587,3 +587,135 @@
         </form>
     </div>
 
+    <!-- Monthly Summary Form -->
+<div class="form-container">
+    <h3>Monthly Summary</h3>
+    <form id="monthlySummaryForm">
+        <div class="form-group">
+            <label for="month">Month*</label>
+            <input type="date" id="month" name="month" required>
+        </div>
+        <div class="form-group">
+            <label for="totalSales">Total Sales*</label>
+            <input type="number" id="totalSales" name="total_sales" min="0" step="0.01" required>
+        </div>
+        <div class="form-group">
+            <label for="totalServices">Total Services*</label>
+            <input type="number" id="totalServices" name="total_services" min="0" step="0.01" required>
+        </div>
+        <div class="form-group">
+            <label for="monthlySummaryExpenses">Total Expenses*</label>
+            <input type="number" id="monthlySummaryExpenses" name="total_expenses" min="0" step="0.01" required>
+        </div>
+        <div class="form-group">
+            <label for="customerCount">Customer Count*</label>
+            <input type="number" id="customerCount" name="customer_count" min="0" required>
+        </div>
+        <div class="form-group">
+            <label for="topEmployeeId">Top Employee ID</label>
+            <input type="number" id="topEmployeeId" name="top_employee_id">
+        </div>
+        <div class="button-group">
+            <button type="submit">Save Monthly Summary</button>
+            <button type="reset" class="cancel">Cancel</button>
+        </div>
+    </form>
+</div>
+
+<!-- Employee Performance Form -->
+<div class="form-container">
+    <h3>Employee Performance</h3>
+    <form id="employeePerformanceForm">
+        <div class="form-group">
+            <label for="employeeId">Employee ID*</label>
+            <input type="number" id="employeeId" name="employee_id" required>
+        </div>
+        <div class="form-group">
+            <label for="perfPeriodStartDate">Period Start Date*</label>
+            <input type="date" id="perfPeriodStartDate" name="period_start_date" required>
+        </div>
+        <div class="form-group">
+            <label for="perfPeriodEndDate">Period End Date*</label>
+            <input type="date" id="perfPeriodEndDate" name="period_end_date" required>
+        </div>
+        <div class="form-group">
+            <label for="empTotalSales">Total Sales*</label>
+            <input type="number" id="empTotalSales" name="total_sales" min="0" step="0.01" required>
+        </div>
+        <div class="form-group">
+            <label for="empTotalServices">Total Services*</label>
+            <input type="number" id="empTotalServices" name="total_services" min="0" step="0.01" required>
+        </div>
+        <div class="form-group">
+            <label for="performanceRating">Performance Rating*</label>
+            <input type="number" id="performanceRating" name="performance_rating" min="0" max="5" step="0.1" required>
+        </div>
+        <div class="button-group">
+            <button type="submit">Save Performance Record</button>
+            <button type="reset" class="cancel">Cancel</button>
+        </div>
+    </form>
+</div>
+
+<!-- Payment Form -->
+<div class="form-container">
+    <h3>Payment</h3>
+    <form id="paymentForm">
+        <div class="form-group">
+            <label for="saleId">Sale ID</label>
+            <input type="number" id="saleId" name="sale_id">
+        </div>
+        <div class="form-group">
+            <label for="servicesId">Services ID</label>
+            <input type="number" id="servicesId" name="services_id">
+        </div>
+        <div class="form-group">
+            <label for="paymentCustomerId">Customer ID*</label>
+            <input type="number" id="paymentCustomerId" name="customer_id" required>
+        </div>
+        <div class="form-group">
+            <label for="transactionCode">Transaction Code*</label>
+            <input type="text" id="transactionCode" name="transaction_code" required>
+        </div>
+        <div class="form-group">
+            <label for="paymentDate">Payment Date*</label>
+            <input type="datetime-local" id="paymentDate" name="payment_date" required>
+        </div>
+        <div class="form-group">
+            <label for="paymentMethod">Payment Method*</label>
+            <select id="paymentMethod" name="payment_method" required>
+                <option value="">-- Select Payment Method --</option>
+                <option value="Cash">Cash</option>
+                <option value="Credit Card">Credit Card</option>
+                <option value="Check">Check</option>
+                <option value="Online">Online</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="paymentAmount">Amount*</label>
+            <input type="number" id="paymentAmount" name="amount" min="0" step="0.01" required>
+        </div>
+        <div class="form-group">
+            <label for="referenceNumber">Reference Number</label>
+            <input type="text" id="referenceNumber" name="reference_number">
+        </div>
+        <div class="form-group">
+            <label for="paymentStatus">Status*</label>
+            <select id="paymentStatus" name="status" required>
+                <option value="">-- Select Status --</option>
+                <option value="Completed">Completed</option>
+                <option value="Pending">Pending</option>
+                <option value="Failed">Failed</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="paymentEmployeeId">Employee ID*</label>
+            <input type="number" id="paymentEmployeeId" name="employee_id" required>
+        </div>
+        <div class="button-group">
+            <button type="submit">Process Payment</button>
+            <button type="reset" class="cancel">Cancel</button>
+        </div>
+    </form>
+</div>
+
